@@ -3,11 +3,8 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
-import { InjectModel } from '@nestjs/mongoose';
-import mongoose from 'mongoose';
 import { UserEntity } from './entity/user.entity';
 import { encryptPassword } from '../utils/encrypt';
-import { UserResponseDto } from './dto/userResponseDto';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
 
